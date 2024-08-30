@@ -1,0 +1,91 @@
+.startOff-container {
+  background:/*  linear-gradient(rgba(34, 160, 148, 0.9), rgba(34, 160, 148, 0.9)),
+    url("../../assets/images/image1.jpg") center/cover; */ #fff;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  color: #000;
+}
+
+.startOff-container h1 {
+  font-family: Gord, serif;
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.startOff-container h2 {
+  font-family: ClashGrotesk, serif;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.grid-container p {
+  font-family: ClashGrotesk, serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-inline: 0.5rem;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  box-shadow: #6b6868 0px 2px 4px 0px;
+  height: 300px;
+}
+.box:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+.grid-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.box-large {
+  grid-row: span 2; /* Each large box spans 2 rows */
+}
+
+.box-small {
+  grid-row: span 1; /* Each small box spans 1 row */
+}
+
+/* Create Masonry layout */
+
+@media (max-width: 1170px) {
+  .box {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .startOff-container h1 {
+    font-size: 3rem;
+  }
+  .startOff-container h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .startOff-container h1 {
+    font-size: 2rem;
+  }
+
+  .startOff-container {
+    padding: 1rem;
+  }
+}

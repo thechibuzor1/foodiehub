@@ -1,0 +1,125 @@
+.navbar {
+  height: 1vh;
+  justify-content: space-between;
+  background-color: #fff;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  color: #000;
+}
+.searchResultsCon {
+  color: #000;
+  background: #fff;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+}
+.navContainer {
+  position: relative;
+}
+.searchResult {
+  transition: 0.3ms ease-in-out all;
+  display: flex;
+  margin: 0.2rem;
+  width: 500px;
+  border-radius: 10px;
+  align-self: center;
+  height: 30px;
+  align-items: center;
+  padding: 10px;
+  
+}
+.searchResult:hover{
+  cursor: pointer;
+  background: #dddddd
+}
+
+.searchResult p {
+  font-family: ClashGrotesk, serif;
+  font-size: 1rem;
+  
+}
+
+.navbar h1 {
+  font-family: ClashGrotesk, serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+ 
+  margin-left: 5px;
+}
+.navbar h2,
+.icon {
+  font-family: ClashGrotesk, serif;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.alignRow {
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+
+.home-search-con {
+  width: 600px;
+  background: /* #383e43 */ #dddddd;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  padding-inline: 1rem;
+}
+
+.home-search-con:active{
+  border: 1px #fff solid;
+}
+.home-search {
+  padding-left: 0.5rem;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background: transparent;
+  border: 0px;
+  color: #000000;
+  font-family: ClashGrotesk, serif;
+  font-size: 1.5rem;
+  width: 90%;
+  outline: none;
+  padding-right: 0.5rem;
+
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar h1 {
+    font-size: 1.2rem;
+  }
+  .navbar h2 {
+    font-size: 0.9rem;
+  }
+
+  .home-search-con {
+    width: 300px;
+  }
+}
+/*  MEDIA QUERIES (SMALL DEVICES) */
+@media screen and (max-width: 600px) {
+  .navbar h2 {
+    display: none;
+  }
+  .navbar {
+    padding: 1rem;
+    height: 3vh;
+  }
+
+  .home-search-con {
+    display: none;
+  }
+  .searchResultsCon {
+    display: none;
+  }
+}

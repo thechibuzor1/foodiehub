@@ -1,0 +1,41 @@
+.recommend-container {
+  background:/*  linear-gradient(rgba(34, 160, 148, 0.9), rgba(34, 160, 148, 0.9)),
+      url("../../assets/images/image1.jpg") center/cover; */ #e8fab0;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  color: #000;
+  
+}
+
+.recommend-container h1 {
+  font-family: Gord, serif;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.recommend-container h2 {
+  font-family: ClashGrotesk, serif;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  .recommend-container h1 {
+    font-size: 2rem;
+  }
+  .recommend-container h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .recommend-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .recommend-container {
+    padding: 1rem;
+  }
+}

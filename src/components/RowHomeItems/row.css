@@ -1,0 +1,177 @@
+.RowHome-container {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+   
+  
+  transition: transform 0.3s ease;
+  
+}
+
+.RowHome-container h1 {
+  font-family: Beanco, serif;
+  font-size: 4rem;
+  font-weight: 500;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+.RowHome-container h2 {
+  font-family: ClashGrotesk, serif;
+  font-size: 2rem;
+  font-weight: normal;
+  margin-left: 2rem;
+  margin-top: 0;
+}
+
+.row-show-more {
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.row-show-more:hover {
+  animation: bounce 0.7s infinite; /* Keep the final animation state */
+}
+.RowHome-container h4{
+  margin-right: 5px;
+  font-family: Satoshi, serif;
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin-left: 5px;
+   
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0); /* Start and end position */
+  }
+  50% {
+    transform: translateY(-5px); /* Bounce up */
+  }
+}
+
+.RowHome-container h3 {
+  font-family: ClashGrotesk, serif;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.row-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 2rem;
+}
+
+.row-container img {
+  object-fit: cover;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 100%;
+  width: 100%;
+  /*  box-shadow: 0 4px 4px rgb(255, 255, 255, 0.2) */
+}
+.row-info-align {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  
+ 
+}.row-info-align-alt{
+  margin-bottom: 10px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row-item {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out;
+  grid-row: span 1;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: #444444 0px 2px 2px 0px;
+   
+}
+
+.row-item:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.row-container h1 {
+  font-family: ClashGrotesk, serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  
+  padding: 5px;
+   
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.row-container p {
+  font-family: Satoshi, serif;
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin-left: 5px;
+  color: #535353;
+}
+
+.row-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0;
+  margin-left: 2rem;
+}
+.row-header-icon {
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .RowHome-container h1 {
+    font-size: 3rem;
+  }
+  .RowHome-container h2 {
+    font-size: 1rem;
+  }
+  .row-container h1 {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+  }
+ 
+}
+
+@media (max-width: 480px) {
+  .RowHome-container h1 {
+    font-size: 2rem;
+  }
+  .RowHome-container h2 {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+  .row-header {
+    margin-left: 1rem;
+  }
+  .row-header-icon {
+    height: 20px;
+  }
+
+  .row-container h1 {
+    font-size: 0.8rem;
+  }
+  .row-container p {
+    font-size: 0.7rem;
+  }
+}
